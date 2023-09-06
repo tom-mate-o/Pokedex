@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanto + Johto Pokédex</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body>
+
+    <div class="inputContainer">
+        <p>Type in Pokémon Nr.</p>
+        <input type="Text" id="input" class="form-control input" placeholder="(1-251)">
+
+        <button id="button">Go!</button>
+
+    </div>
+
+    <div class="pokedex">
+        <div class="pokedexContainer">
+            <div class="header">
+                <h1 id="pkmn_name"></h1>
+            </div>
+
+            <div class="details">
+                <h2 id="pkmn_nr"></h2>
+                <p id="pkmn_type" class="pkmn_type">...</p>
+            </div>
+
+            <div class="image">
+                <img id="pkmn_img"></img>
+            </div>
+
+            <div class="text">
+                <p id="pkmn_text">...</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

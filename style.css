@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: grey !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedexContainer {
+    max-width: 600px;
+    height: auto;
+    background-color: lightgray;
+    border: double 10px #000;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    display: grid;
+    grid-template-columns: 20%, 80%;
+    grid-template-rows: 200px, auto, 200px;
+    margin-top: 25px;
+}
+
+.inputContainer {
+    max-width: 600px;
+    height: auto;
+    background-color: lightgray;
+    border: double 10px #000;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+input {
+    width: auto;
+    height: 50px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-large;
+    text-align: center;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-large;
+}
+
+.header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+
+
+.details {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: small;
+    }
+}
+
+.image {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    padding-right: 10px;
+
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.text {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+}
+
+.pkmn_type {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.normal {
+    background-color: #A8A878;
+}
+
+
+.fire {
+    background-color: #F08030;
+}
+
+.flying {
+    background-color: #A890F0;
+}
+
+.fighting {
+    background-color: #C03028;
+}
+
+.water {
+    background-color: #6890F0;
+}
+
+.grass {
+    background-color: #78C850;
+}
+
+.poison {
+    background-color: #A040A0;
+}
+
+.electric {
+    background-color: #F8D030;
+}
+
+.ground {
+    background-color: #E0C068;
+}
+
+.psychic {
+    background-color: #F85888;
+}
+
+.rock {
+    background-color: #B8A038;
+}
+
+.ice {
+    background-color: #98D8D8;
+}
+
+.bug {
+    background-color: #A8B820;
+}
+
+.dragon {
+    background-color: #7038F8;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dark {
+    background-color: #705848;
+}
+
+.steel {
+    background-color: #B8B8D0;
+}
+
+.fairy {
+    background-color: #EE99AC;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 100%;
+
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+
+    .inputContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        font-size: xx-large;
+    }
+
+    .pokedexContainer {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px, auto, auto, 200px;
+
+    }
+
+
+    .header {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    .details {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .image {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+        padding: 0px;
+
+        img {
+            max-width: 90%;
+            height: auto;
+        }
+    }
+
+    .text {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 25px;
+        font-size: small;
+    }
+
+}
